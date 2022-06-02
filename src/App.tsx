@@ -3,10 +3,16 @@ import React from 'react';
 import './App.css';
 //import Login from './screens/login/login';
 import Form from './screens/login/components/login.screen';
+import { ThemeProvider } from 'styled-components';
+import theme from './themes/main/theme';
 
 function App() {
   return (
-    <Form/>
+    <ThemeProvider 
+      theme ={theme}
+      >
+      <Form/>
+    </ThemeProvider>
   );
 }
 
