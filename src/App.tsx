@@ -1,18 +1,20 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
-//import Login from './screens/login/login';
 import Form from './screens/login/components/login.screen';
 import { ThemeProvider } from 'styled-components';
 import theme from './themes/main/theme';
+import { GlobalStyles } from './themes/main/global.styles';
 
 function App() {
   return (
+    <>
+    <GlobalStyles/>
     <ThemeProvider 
       theme ={theme}
       >
       <Form/>
     </ThemeProvider>
+    </>
   );
 }
 
