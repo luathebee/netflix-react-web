@@ -7,4 +7,4 @@ fullstack development bootcamp - netflix project
 * Themes
 * Routes
 * Global States (Redux)
-    * Not yet implemented
+    * Not _yet fully_ implemented
